@@ -10,7 +10,7 @@ function App() {
     <Router>
       <NavBar /> 
       <Switch>
-        {/* TODO: Rutas hacia Landing page y Login */}
+        {/* Rutas hacia Landing page y Login(URL paths) */}
         <Route exact path="/" component={Landing} />
         <Route path="/login" component={Login} />
       </Switch>
