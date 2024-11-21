@@ -6,11 +6,12 @@ const Calendario = () => {
   const date = currentDate.toLocaleDateString();
   const year = currentDate.getFullYear();
 
+  const imageUrl = "URL_DE_TU_IMAGEN_AQUI"; // TODO: CAmbiar con URL de base de datos
+
   return (
     <div>
       <h1>Calendario</h1>
       
-      {/* Display today's date, day, and year */}
       <div>
         <p>Today's Date: {date}</p>
         <p>Today's Day: {dayOfWeek}</p>
@@ -18,7 +19,11 @@ const Calendario = () => {
       </div>
       
       <div>
-        <button>Button</button>
+        {/* URL de la imagen */}
+        <img 
+          src={imageUrl} 
+          alt="Calendario" 
+        />
       </div>
     </div>
   );
